@@ -1,6 +1,8 @@
 import requests
 import json
 from requests.exceptions import RequestException
+
+# from app.models import Route
 from dotenv import load_dotenv
 import os
 
@@ -59,7 +61,9 @@ def compute_ndvi_layer(bounding_box):
 
 def get_route(lng_a, lat_a, lng_b, lat_b):
     payload = get_routes_from_graphopper(lng_a, lat_a, lng_b, lat_b)
-    return payload
+    # TODO: Insert route into database
+    
+    return payload['paths'][0]
 
     # TODO: Implement algorithm for computing overlaps with shadow and ndvi layers and return best route
     # TODO: Get bounding box from the payload
