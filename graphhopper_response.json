@@ -1,0 +1,835 @@
+{"hints": {"visited_nodes.sum": 302, "visited_nodes.average": 302.0
+    }, "info": {"copyrights": ["GraphHopper", "OpenStreetMap contributors"
+        ], "took": 3, "road_data_timestamp": "2025-11-16T00: 00: 00Z"
+    }, "paths": [
+        {"distance": 1886.734, "weight": 1180.416452, "time": 1389371, "transfers": 0, "legs": [], "points_encoded": False, "bbox": [
+                -66.056021,
+                18.397633,
+                -66.045233,
+                18.40645
+            ], "points": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.056007,
+                        18.405983
+                    ],
+                    [
+                        -66.054737,
+                        18.406035
+                    ],
+                    [
+                        -66.054612,
+                        18.405264
+                    ],
+                    [
+                        -66.054642,
+                        18.405221
+                    ],
+                    [
+                        -66.054635,
+                        18.40515
+                    ],
+                    [
+                        -66.054569,
+                        18.404839
+                    ],
+                    [
+                        -66.054408,
+                        18.404459
+                    ],
+                    [
+                        -66.054254,
+                        18.404045
+                    ],
+                    [
+                        -66.054007,
+                        18.403627
+                    ],
+                    [
+                        -66.053932,
+                        18.403566
+                    ],
+                    [
+                        -66.053847,
+                        18.40347
+                    ],
+                    [
+                        -66.05356,
+                        18.403042
+                    ],
+                    [
+                        -66.053453,
+                        18.402895
+                    ],
+                    [
+                        -66.053522,
+                        18.402862
+                    ],
+                    [
+                        -66.053009,
+                        18.402157
+                    ],
+                    [
+                        -66.052842,
+                        18.401938
+                    ],
+                    [
+                        -66.052571,
+                        18.401676
+                    ],
+                    [
+                        -66.05256,
+                        18.401647
+                    ],
+                    [
+                        -66.052588,
+                        18.401628
+                    ],
+                    [
+                        -66.052602,
+                        18.401627
+                    ],
+                    [
+                        -66.0526,
+                        18.401605
+                    ],
+                    [
+                        -66.052361,
+                        18.401597
+                    ],
+                    [
+                        -66.05217,
+                        18.401483
+                    ],
+                    [
+                        -66.051877,
+                        18.401328
+                    ],
+                    [
+                        -66.051762,
+                        18.400912
+                    ],
+                    [
+                        -66.051671,
+                        18.400685
+                    ],
+                    [
+                        -66.051511,
+                        18.400415
+                    ],
+                    [
+                        -66.051078,
+                        18.399878
+                    ],
+                    [
+                        -66.049685,
+                        18.399749
+                    ],
+                    [
+                        -66.048677,
+                        18.399855
+                    ],
+                    [
+                        -66.048669,
+                        18.399726
+                    ],
+                    [
+                        -66.048665,
+                        18.399107
+                    ],
+                    [
+                        -66.04868,
+                        18.398458
+                    ],
+                    [
+                        -66.048489,
+                        18.398458
+                    ],
+                    [
+                        -66.048499,
+                        18.397674
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }, "instructions": [
+                {"distance": 52.016, "heading": 178.35, "sign": 0, "interval": [
+                        0,
+                        1
+                    ], "text": "Continue", "time": 37452, "street_name": ""
+                },
+                {"distance": 134.306, "sign": -2, "interval": [
+                        1,
+                        2
+                    ], "text": "Turn left onto Calle Reverendo Domingo Marrero Navarro", "time": 113765, "street_name": "Calle Reverendo Domingo Marrero Navarro"
+                },
+                {"distance": 307.798, "sign": 2, "interval": [
+                        2,
+                        11
+                    ], "text": "Turn right onto Calle Añasco", "time": 221613, "street_name": "Calle Añasco"
+                },
+                {"distance": 56.408, "sign": 0, "interval": [
+                        11,
+                        12
+                    ], "text": "Continue onto Calle Cabrera", "time": 40614, "street_name": "Calle Cabrera"
+                },
+                {"distance": 19.859, "sign": 0, "interval": [
+                        12,
+                        13
+                    ], "text": "Continue onto Avenida Dr. José Narciso Gándara Cartagena", "time": 14298, "street_name": "Avenida Dr. José Narciso Gándara Cartagena"
+                },
+                {"distance": 8.085, "sign": 2, "interval": [
+                        13,
+                        14
+                    ], "text": "Turn right", "time": 5821, "street_name": ""
+                },
+                {"distance": 177.156, "sign": -2, "interval": [
+                        14,
+                        21
+                    ], "text": "Turn left", "time": 133886, "street_name": ""
+                },
+                {"distance": 25.339, "sign": -2, "interval": [
+                        21,
+                        22
+                    ], "text": "Turn left onto Calle Amalia Marín", "time": 18244, "street_name": "Calle Amalia Marín"
+                },
+                {"distance": 59.234, "sign": 1, "interval": [
+                        22,
+                        24
+                    ], "text": "Turn slight right onto Avenida Dr. José Narciso Gándara Cartagena", "time": 50174, "street_name": "Avenida Dr. José Narciso Gándara Cartagena"
+                },
+                {"distance": 184.441, "sign": 2, "interval": [
+                        24,
+                        28
+                    ], "text": "Turn right onto Calle Rosales", "time": 132798, "street_name": "Calle Rosales"
+                },
+                {"distance": 254.734, "sign": -2, "interval": [
+                        28,
+                        30
+                    ], "text": "Turn left onto Calle Robles", "time": 183409, "street_name": "Calle Robles"
+                },
+                {"distance": 155.408, "sign": 2, "interval": [
+                        30,
+                        33
+                    ], "text": "Turn right", "time": 111893, "street_name": ""
+                },
+                {"street_ref": "PR-47", "distance": 20.216, "sign": -2, "interval": [
+                        33,
+                        34
+                    ], "text": "Turn left onto Avenida José de Diego", "time": 14556, "street_name": "Avenida José de Diego"
+                },
+                {"distance": 87.129, "sign": 2, "interval": [
+                        34,
+                        35
+                    ], "text": "Turn right onto Calle Monseñor Torres", "time": 62733, "street_name": "Calle Monseñor Torres"
+                },
+                {"distance": 344.605, "sign": -2, "interval": [
+                        35,
+                        36
+                    ], "text": "Turn left onto Calle Arzuaga", "time": 248115, "street_name": "Calle Arzuaga"
+                },
+                {"distance": 0.0, "sign": 4, "last_heading": 90.91121335340772, "interval": [
+                        36,
+                        36
+                    ], "text": "Arrive at destination", "time": 0, "street_name": ""
+                }
+            ], "details": {}, "ascend": 27.0914306640625, "descend": 7.2474365234375, "snapped_waypoints": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }
+        },
+        {"distance": 1894.438, "weight": 1182.651477, "time": 1394918, "transfers": 0, "legs": [], "points_encoded": False, "bbox": [
+                -66.056021,
+                18.397633,
+                -66.045233,
+                18.40645
+            ], "points": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.056007,
+                        18.405983
+                    ],
+                    [
+                        -66.054737,
+                        18.406035
+                    ],
+                    [
+                        -66.054612,
+                        18.405264
+                    ],
+                    [
+                        -66.054642,
+                        18.405221
+                    ],
+                    [
+                        -66.054635,
+                        18.40515
+                    ],
+                    [
+                        -66.054569,
+                        18.404839
+                    ],
+                    [
+                        -66.054408,
+                        18.404459
+                    ],
+                    [
+                        -66.054254,
+                        18.404045
+                    ],
+                    [
+                        -66.054007,
+                        18.403627
+                    ],
+                    [
+                        -66.053932,
+                        18.403566
+                    ],
+                    [
+                        -66.053847,
+                        18.40347
+                    ],
+                    [
+                        -66.05356,
+                        18.403042
+                    ],
+                    [
+                        -66.053453,
+                        18.402895
+                    ],
+                    [
+                        -66.053522,
+                        18.402862
+                    ],
+                    [
+                        -66.053009,
+                        18.402157
+                    ],
+                    [
+                        -66.052842,
+                        18.401938
+                    ],
+                    [
+                        -66.052571,
+                        18.401676
+                    ],
+                    [
+                        -66.05256,
+                        18.401647
+                    ],
+                    [
+                        -66.052588,
+                        18.401628
+                    ],
+                    [
+                        -66.052602,
+                        18.401627
+                    ],
+                    [
+                        -66.0526,
+                        18.401605
+                    ],
+                    [
+                        -66.052361,
+                        18.401597
+                    ],
+                    [
+                        -66.05217,
+                        18.401483
+                    ],
+                    [
+                        -66.051877,
+                        18.401328
+                    ],
+                    [
+                        -66.051762,
+                        18.400912
+                    ],
+                    [
+                        -66.051671,
+                        18.400685
+                    ],
+                    [
+                        -66.051511,
+                        18.400415
+                    ],
+                    [
+                        -66.051078,
+                        18.399878
+                    ],
+                    [
+                        -66.049685,
+                        18.399749
+                    ],
+                    [
+                        -66.048475,
+                        18.399877
+                    ],
+                    [
+                        -66.047979,
+                        18.399902
+                    ],
+                    [
+                        -66.047541,
+                        18.399905
+                    ],
+                    [
+                        -66.047539,
+                        18.399229
+                    ],
+                    [
+                        -66.046019,
+                        18.399209
+                    ],
+                    [
+                        -66.046043,
+                        18.397645
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }, "instructions": [
+                {"distance": 52.016, "heading": 178.35, "sign": 0, "interval": [
+                        0,
+                        1
+                    ], "text": "Continue", "time": 37452, "street_name": ""
+                },
+                {"distance": 134.306, "sign": -2, "interval": [
+                        1,
+                        2
+                    ], "text": "Turn left onto Calle Reverendo Domingo Marrero Navarro", "time": 113765, "street_name": "Calle Reverendo Domingo Marrero Navarro"
+                },
+                {"distance": 307.798, "sign": 2, "interval": [
+                        2,
+                        11
+                    ], "text": "Turn right onto Calle Añasco", "time": 221613, "street_name": "Calle Añasco"
+                },
+                {"distance": 56.408, "sign": 0, "interval": [
+                        11,
+                        12
+                    ], "text": "Continue onto Calle Cabrera", "time": 40614, "street_name": "Calle Cabrera"
+                },
+                {"distance": 19.859, "sign": 0, "interval": [
+                        12,
+                        13
+                    ], "text": "Continue onto Avenida Dr. José Narciso Gándara Cartagena", "time": 14298, "street_name": "Avenida Dr. José Narciso Gándara Cartagena"
+                },
+                {"distance": 8.085, "sign": 2, "interval": [
+                        13,
+                        14
+                    ], "text": "Turn right", "time": 5821, "street_name": ""
+                },
+                {"distance": 177.156, "sign": -2, "interval": [
+                        14,
+                        21
+                    ], "text": "Turn left", "time": 133886, "street_name": ""
+                },
+                {"distance": 25.339, "sign": -2, "interval": [
+                        21,
+                        22
+                    ], "text": "Turn left onto Calle Amalia Marín", "time": 18244, "street_name": "Calle Amalia Marín"
+                },
+                {"distance": 59.234, "sign": 1, "interval": [
+                        22,
+                        24
+                    ], "text": "Turn slight right onto Avenida Dr. José Narciso Gándara Cartagena", "time": 50174, "street_name": "Avenida Dr. José Narciso Gándara Cartagena"
+                },
+                {"distance": 184.441, "sign": 2, "interval": [
+                        24,
+                        28
+                    ], "text": "Turn right onto Calle Rosales", "time": 132798, "street_name": "Calle Rosales"
+                },
+                {"distance": 374.842, "sign": -2, "interval": [
+                        28,
+                        32
+                    ], "text": "Turn left onto Calle Robles", "time": 269887, "street_name": "Calle Robles"
+                },
+                {"distance": 75.143, "sign": 2, "interval": [
+                        32,
+                        33
+                    ], "text": "Turn right onto Calle Vallejo", "time": 54102, "street_name": "Calle Vallejo"
+                },
+                {"distance": 160.392, "sign": -2, "interval": [
+                        33,
+                        34
+                    ], "text": "Turn left onto Calle Padre Colón", "time": 115482, "street_name": "Calle Padre Colón"
+                },
+                {"distance": 173.979, "sign": 2, "interval": [
+                        34,
+                        35
+                    ], "text": "Turn right onto Calle Dr. Luis Izquierdo Mora", "time": 125265, "street_name": "Calle Dr. Luis Izquierdo Mora"
+                },
+                {"distance": 85.44, "sign": -2, "interval": [
+                        35,
+                        36
+                    ], "text": "Turn left onto Calle Arzuaga", "time": 61517, "street_name": "Calle Arzuaga"
+                },
+                {"distance": 0.0, "sign": 4, "last_heading": 90.91121335340772, "interval": [
+                        36,
+                        36
+                    ], "text": "Arrive at destination", "time": 0, "street_name": ""
+                }
+            ], "details": {}, "ascend": 27.21044921875, "descend": 7.366455078125, "snapped_waypoints": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }
+        },
+        {"distance": 2015.006, "weight": 1252.257477, "time": 1476547, "transfers": 0, "legs": [], "points_encoded": False, "bbox": [
+                -66.056021,
+                18.397633,
+                -66.045233,
+                18.40645
+            ], "points": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.056007,
+                        18.405983
+                    ],
+                    [
+                        -66.054737,
+                        18.406035
+                    ],
+                    [
+                        -66.054612,
+                        18.405264
+                    ],
+                    [
+                        -66.054642,
+                        18.405221
+                    ],
+                    [
+                        -66.054635,
+                        18.40515
+                    ],
+                    [
+                        -66.054569,
+                        18.404839
+                    ],
+                    [
+                        -66.053916,
+                        18.404985
+                    ],
+                    [
+                        -66.05343,
+                        18.405072
+                    ],
+                    [
+                        -66.053404,
+                        18.40507
+                    ],
+                    [
+                        -66.052935,
+                        18.404875
+                    ],
+                    [
+                        -66.052533,
+                        18.404869
+                    ],
+                    [
+                        -66.052466,
+                        18.404853
+                    ],
+                    [
+                        -66.052255,
+                        18.404854
+                    ],
+                    [
+                        -66.052202,
+                        18.40487
+                    ],
+                    [
+                        -66.052078,
+                        18.404862
+                    ],
+                    [
+                        -66.05203,
+                        18.40484
+                    ],
+                    [
+                        -66.051958,
+                        18.404839
+                    ],
+                    [
+                        -66.051959,
+                        18.40456
+                    ],
+                    [
+                        -66.051985,
+                        18.403918
+                    ],
+                    [
+                        -66.051429,
+                        18.403878
+                    ],
+                    [
+                        -66.051228,
+                        18.403824
+                    ],
+                    [
+                        -66.050962,
+                        18.403678
+                    ],
+                    [
+                        -66.050764,
+                        18.403477
+                    ],
+                    [
+                        -66.050662,
+                        18.403303
+                    ],
+                    [
+                        -66.05063,
+                        18.403149
+                    ],
+                    [
+                        -66.050674,
+                        18.402597
+                    ],
+                    [
+                        -66.050678,
+                        18.402449
+                    ],
+                    [
+                        -66.050631,
+                        18.402437
+                    ],
+                    [
+                        -66.050608,
+                        18.402415
+                    ],
+                    [
+                        -66.050596,
+                        18.402387
+                    ],
+                    [
+                        -66.050597,
+                        18.402357
+                    ],
+                    [
+                        -66.050609,
+                        18.402329
+                    ],
+                    [
+                        -66.050632,
+                        18.402308
+                    ],
+                    [
+                        -66.050663,
+                        18.402296
+                    ],
+                    [
+                        -66.050631,
+                        18.40215
+                    ],
+                    [
+                        -66.050575,
+                        18.402028
+                    ],
+                    [
+                        -66.050517,
+                        18.401958
+                    ],
+                    [
+                        -66.050477,
+                        18.401932
+                    ],
+                    [
+                        -66.050333,
+                        18.401872
+                    ],
+                    [
+                        -66.04837,
+                        18.401746
+                    ],
+                    [
+                        -66.048278,
+                        18.401711
+                    ],
+                    [
+                        -66.048236,
+                        18.401664
+                    ],
+                    [
+                        -66.048217,
+                        18.401466
+                    ],
+                    [
+                        -66.04819,
+                        18.401377
+                    ],
+                    [
+                        -66.048147,
+                        18.401171
+                    ],
+                    [
+                        -66.048067,
+                        18.401058
+                    ],
+                    [
+                        -66.047992,
+                        18.400976
+                    ],
+                    [
+                        -66.047941,
+                        18.40096
+                    ],
+                    [
+                        -66.0479,
+                        18.400925
+                    ],
+                    [
+                        -66.047819,
+                        18.400699
+                    ],
+                    [
+                        -66.047794,
+                        18.399903
+                    ],
+                    [
+                        -66.047541,
+                        18.399905
+                    ],
+                    [
+                        -66.047539,
+                        18.399229
+                    ],
+                    [
+                        -66.046019,
+                        18.399209
+                    ],
+                    [
+                        -66.046043,
+                        18.397645
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }, "instructions": [
+                {"distance": 52.016, "heading": 178.35, "sign": 0, "interval": [
+                        0,
+                        1
+                    ], "text": "Continue", "time": 37452, "street_name": ""
+                },
+                {"distance": 134.306, "sign": -2, "interval": [
+                        1,
+                        2
+                    ], "text": "Turn left onto Calle Reverendo Domingo Marrero Navarro", "time": 113765, "street_name": "Calle Reverendo Domingo Marrero Navarro"
+                },
+                {"distance": 135.803, "sign": 2, "interval": [
+                        2,
+                        6
+                    ], "text": "Turn right onto Calle Añasco", "time": 97778, "street_name": "Calle Añasco"
+                },
+                {"distance": 125.808, "sign": -2, "interval": [
+                        6,
+                        9
+                    ], "text": "Turn left onto Calle Balseiro", "time": 90582, "street_name": "Calle Balseiro"
+                },
+                {"distance": 125.977, "sign": 1, "interval": [
+                        9,
+                        13
+                    ], "text": "Turn slight right", "time": 94019, "street_name": ""
+                },
+                {"distance": 32.174, "sign": -7, "interval": [
+                        13,
+                        17
+                    ], "text": "Keep left", "time": 23165, "street_name": ""
+                },
+                {"street_ref": "PR-25", "distance": 102.6, "sign": 2, "interval": [
+                        17,
+                        19
+                    ], "text": "Turn right onto Avenida Juan Ponce de León", "time": 70354, "street_name": "Avenida Juan Ponce de León"
+                },
+                {"distance": 58.938, "sign": -2, "interval": [
+                        19,
+                        20
+                    ], "text": "Turn left onto Avenida Universidad", "time": 48513, "street_name": "Avenida Universidad"
+                },
+                {"distance": 202.695, "sign": 7, "interval": [
+                        20,
+                        27
+                    ], "text": "Keep right", "time": 148744, "street_name": ""
+                },
+                {"exit_number": 1, "distance": 396.466, "sign": 6, "exited": True, "turn_angle": 2.91, "interval": [
+                        27,
+                        47
+                    ], "text": "At roundabout, take exit 1", "time": 285455, "street_name": ""
+                },
+                {"distance": 126.521, "sign": -7, "interval": [
+                        47,
+                        51
+                    ], "text": "Keep left onto Calle 2", "time": 91095, "street_name": "Calle 2"
+                },
+                {"distance": 26.748, "sign": -2, "interval": [
+                        51,
+                        52
+                    ], "text": "Turn left onto Calle Robles", "time": 19259, "street_name": "Calle Robles"
+                },
+                {"distance": 75.143, "sign": 2, "interval": [
+                        52,
+                        53
+                    ], "text": "Turn right onto Calle Vallejo", "time": 54102, "street_name": "Calle Vallejo"
+                },
+                {"distance": 160.392, "sign": -2, "interval": [
+                        53,
+                        54
+                    ], "text": "Turn left onto Calle Padre Colón", "time": 115482, "street_name": "Calle Padre Colón"
+                },
+                {"distance": 173.979, "sign": 2, "interval": [
+                        54,
+                        55
+                    ], "text": "Turn right onto Calle Dr. Luis Izquierdo Mora", "time": 125265, "street_name": "Calle Dr. Luis Izquierdo Mora"
+                },
+                {"distance": 85.44, "sign": -2, "interval": [
+                        55,
+                        56
+                    ], "text": "Turn left onto Calle Arzuaga", "time": 61517, "street_name": "Calle Arzuaga"
+                },
+                {"distance": 0.0, "sign": 4, "last_heading": 90.91121335340772, "interval": [
+                        56,
+                        56
+                    ], "text": "Arrive at destination", "time": 0, "street_name": ""
+                }
+            ], "details": {}, "ascend": 29.6947021484375, "descend": 9.8507080078125, "snapped_waypoints": {"type": "LineString", "coordinates": [
+                    [
+                        -66.056021,
+                        18.40645
+                    ],
+                    [
+                        -66.045233,
+                        18.397633
+                    ]
+                ]
+            }
+        }
+    ]
+}

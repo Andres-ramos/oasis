@@ -2,7 +2,6 @@ import requests
 import json
 from requests.exceptions import RequestException
 
-# from app.models import Route
 from dotenv import load_dotenv
 import os
 
