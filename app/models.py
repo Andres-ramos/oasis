@@ -8,7 +8,7 @@ class Route(models.Model):
     ascend = models.FloatField()
     descend = models.FloatField()
     instructions = models.JSONField()
-    request_time = models.DateField()
+    request_time = models.DateTimeField()
     route = models.LineStringField()
     departure = models.PointField()
     destination = models.PointField()
