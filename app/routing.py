@@ -4,6 +4,9 @@ from requests.exceptions import RequestException
 
 from dotenv import load_dotenv
 import os
+import logging
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -36,6 +39,7 @@ def get_routes_from_graphopper(lng_a, lat_a, lng_b, lat_b):
     }
     json_body = json.dumps(body, separators=(',', ':'))
     try :
+        logger.info("Requesting data from graphhopper API")
         data = requests.post(BASE_URI, params=params, data=json_body, headers=header)
     except RequestException:
         pass 

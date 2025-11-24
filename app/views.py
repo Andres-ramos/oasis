@@ -15,6 +15,9 @@ from rest_framework import status
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class RouteCreateView(APIView):
@@ -23,6 +26,8 @@ class RouteCreateView(APIView):
 
 
     def post(self, request):
+        logger.info("Processing routing engpoint")
+
         try:
             data = json.loads(request.body)
         except json.JSONDecodeError:
@@ -31,12 +36,15 @@ class RouteCreateView(APIView):
         origin = data.get('origin')
         destination = data.get('destination')
         if not origin:
+            logger.info("Malformed request")
             return Response({'error': 'origin is required'}, status=400)
         if not destination:
+            logger.info("Malformed request")
             return Response({'error': 'destination is required'}, status=400)
 
         request_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
+        logger.info("Processing route")
         try:
             route_data = get_route(
                 origin['lng'], origin['lat'],
@@ -44,6 +52,7 @@ class RouteCreateView(APIView):
             )
 
         except Exception:
+            logger.error("Routing service error")
             return Response({"error": "routing service error"}, status=500)
 
 
@@ -60,8 +69,9 @@ class RouteCreateView(APIView):
             destination_geom = GEOSGeometry(json.dumps(destination_geojson))
             route_linestring = GEOSGeometry(json.dumps(route_data["points"]))
         except Exception:
-            print("Route service formatting error")
+            logger.error("Route service formatting error")
 
+        logger.info("Inserting route into databse")
         try:
             route_obj = Route.objects.create(
                 time=route_data["time"],
@@ -76,6 +86,7 @@ class RouteCreateView(APIView):
             )
             route_obj.save()
         except Exception:
-            print("Route db insertion error")
+            logger.error("Route db insertion error")
 
+        logger.info("Returning route to client")
         return Response({'route': route_data}, status=200)
