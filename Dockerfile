@@ -12,7 +12,6 @@ RUN adduser oasis_user --ingroup oasis_group
 
 # Install server dependencies
 # See more here: https://docs.djangoproject.com/en/5.0/ref/contrib/gis/install/geolibs/#installing-geospatial-libraries
-# Alpine Package  - PyPi Package - Reference
 # g++             - fiona        - https://stackoverflow.com/questions/58700451/alpine-error-during-installing-python-shapely
 # gdal (x2)       - gdal-config  - https://stackoverflow.com/a/50539325/13290655
 # geos (x2)       - shapely      - https://stackoverflow.com/questions/58700451/alpine-error-during-installing-python-shapely
@@ -31,20 +30,6 @@ RUN apt-get install -y --no-install-recommends \
     proj-bin \
     libproj-dev \
     && rm -rf /var/lib/apt/lists/*
-
-# RUN apt install \
-#     binutils \
-#     g++ \
-#     gdal \
-#     gdal-dev \
-#     geos \
-#     geos-dev \
-#     musl-dev \
-#     postgresql-dev \
-#     postgresql-libs \
-#     proj \
-#     proj-dev \
-#     proj-util
 
 # Install app dependencies
 RUN pip install --upgrade pip
