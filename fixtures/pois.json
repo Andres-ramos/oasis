@@ -1,0 +1,1058 @@
+[
+{
+    "model": "app.poi",
+    "pk": 4,
+    "fields": {
+        "name": "COMMUNITY HEALTH FOUNDATION OF PUERTO RICO",
+        "municipality": "Bayamón",
+        "address": "Bo. Hato Tejas Carr. 167, Km. 20.3, Bayamón, PR 00959",
+        "phone_number": "(787) 780-1273",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.36159 -66.19504)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 5,
+    "fields": {
+        "name": "COSSMA, INC.",
+        "municipality": "Carolina",
+        "address": "Ave. Fagot #678, Carolina, PR 00985",
+        "phone_number": "(787) 939-2000",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.39768 -65.95551)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 6,
+    "fields": {
+        "name": "NEOMED CENTER, INC.",
+        "municipality": "Guaynabo",
+        "address": "Calle A #42, Santa Clara, Guaynabo, PR 00969",
+        "phone_number": "(787) 789-2222",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.38462 -66.11181)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 7,
+    "fields": {
+        "name": "ATLANTIC MEDICAL CENTER, INC. - SAN JUAN",
+        "municipality": "San Juan",
+        "address": "Carr. 1, Km 23.3, San Juan, PR 00926",
+        "phone_number": "(787) 993-2700",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.37916 -66.0712)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 8,
+    "fields": {
+        "name": "COSSMA INC. PUERTO NUEVO",
+        "municipality": "San Juan",
+        "address": "Calle B #4, Urb. Reparto Amet, Puerto Nuevo, San Juan, PR 00920",
+        "phone_number": "(787) 782-5527",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.41163 -66.08483)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 9,
+    "fields": {
+        "name": "CORPORACIÓN DE SERVICIOS DE SALUD - SANTURCE",
+        "municipality": "San Juan",
+        "address": "Ave. Ponce de León 1459, Santurce, PR 00907",
+        "phone_number": "(787) 728-6444",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.44199 -66.0743)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 10,
+    "fields": {
+        "name": "COSSMA, INC. - CUPEY",
+        "municipality": "San Juan",
+        "address": "PR-845, Km 4.1, Bo. Cupey Bajo, San Juan, PR 00926",
+        "phone_number": "(787) 760-4444",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.3683 -66.0465)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 11,
+    "fields": {
+        "name": "TOA ALTA I: SALUD INTEGRAL EN LA MONTAÑA, INC.",
+        "municipality": "Toa Alta",
+        "address": "PR-824, Km 0.4, Bo. Piña, Toa Alta, PR 00953",
+        "phone_number": "(787) 870-0008",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.35759 -66.24279)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 12,
+    "fields": {
+        "name": "TOA ALTA II: SALUD INTEGRAL EN LA MONTAÑA, INC.",
+        "municipality": "Toa Alta",
+        "address": "Carr. 863, Km 1.5, Toa Alta, PR 00953",
+        "phone_number": "(787) 545-8808",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.38883 -66.2483)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 13,
+    "fields": {
+        "name": "MOROVIS COMMUNITY HEALTH CENTER - TOA BAJA",
+        "municipality": "Toa Baja",
+        "address": "PR-2, Km 19.4, Bayamón, PR 00957",
+        "phone_number": "(939) 399-0042",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.43577 -66.19507)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 14,
+    "fields": {
+        "name": "SALUD INTEGRAL EN LA MONTAÑA, INC.",
+        "municipality": "Trujillo Alto",
+        "address": "PR-199, Km 0.5, Bo. Dos Bocas, Trujillo Alto, PR 00976",
+        "phone_number": "(787) 748-0200",
+        "category": "centro-330",
+        "location": "SRID=4326;POINT (18.33647 -66.0121)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 15,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE SANTA JUANITA",
+        "municipality": "Bayamón",
+        "address": "Carr. 830, Km 2.5, Bo. Santa Juanita, Bayamón, PR 00956",
+        "phone_number": "(787) 523-1417",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.37568 -66.13689)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 16,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE BAYAMON",
+        "municipality": "Bayamón",
+        "address": "Ave. Main 623, Bayamón, PR 00959",
+        "phone_number": "(787) 787-9353",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.39659 -66.15573)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 17,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE CAROLINA",
+        "municipality": "Carolina",
+        "address": "Ave. 65 de Infantería, Km 8.5, Carolina, PR 00985",
+        "phone_number": "(787) 762-2252",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.39859 -66.0028)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 18,
+    "fields": {
+        "name": "RENTROP CARIBBEAN, INC. - CAROLINA",
+        "municipality": "Carolina",
+        "address": "Carr. 887, Esq. Ave. 65 de Infantería, Carolina, PR 00979",
+        "phone_number": "(787) 750-1490",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.42398 -66.00552)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 19,
+    "fields": {
+        "name": "THE RENAL CENTRE OF DORADO",
+        "municipality": "Dorado",
+        "address": "PR-693, Km 5.6, Dorado, PR 00646",
+        "phone_number": "(787) 292-7979",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.4697 -66.2691)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 20,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE GUAYNABO",
+        "municipality": "Guaynabo",
+        "address": "Carr. 1, Km 17.5, Guaynabo, PR 00966",
+        "phone_number": "(787) 793-2790",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.37568 -66.11309)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 21,
+    "fields": {
+        "name": "RENTROP CARIBBEAN, INC. - GUAYNABO",
+        "municipality": "Guaynabo",
+        "address": "Ave. Esmeralda #293, Guaynabo, PR 00969",
+        "phone_number": "(787) 273-0091",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.35829 -66.10851)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 22,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE BORINQUEN (HATO REY)",
+        "municipality": "San Juan",
+        "address": "Ave. Borinquen #1901, San Juan, PR 00921",
+        "phone_number": "(787) 765-8822",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.40698 -66.06451)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 23,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE CAPARRA",
+        "municipality": "San Juan",
+        "address": "Ave. Lomas Verdes B6, San Juan, PR 00921",
+        "phone_number": "(787) 782-2022",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.41407 -66.09455)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 24,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE MONTEHIEDRA",
+        "municipality": "San Juan",
+        "address": "Carr. 199, Km 3.5, San Juan, PR 00926",
+        "phone_number": "(787) 292-7979",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.34969 -66.05953)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 25,
+    "fields": {
+        "name": "RENTROP CARIBBEAN, INC. - SAN JUAN (HATO REY)",
+        "municipality": "San Juan",
+        "address": "Calle Arterial #120, Hato Rey, San Juan, PR 00918",
+        "phone_number": "(787) 765-7288",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.41163 -66.08483)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 26,
+    "fields": {
+        "name": "RENTROP CARIBBEAN, INC. - SAN JUAN (RIO PIEDRAS)",
+        "municipality": "San Juan",
+        "address": "Ave. 65 de Infantería, Esq. Calle 2, Río Piedras, San Juan, PR 00924",
+        "phone_number": "(787) 764-7060",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.40149 -66.03551)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 27,
+    "fields": {
+        "name": "SAN JUAN KIDNEY CENTER",
+        "municipality": "San Juan",
+        "address": "Ave. Muñoz Rivera #1640, San Juan, PR 00926",
+        "phone_number": "(787) 728-6888",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.43577 -66.0622)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 28,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE PUERTO NUEVO",
+        "municipality": "San Juan",
+        "address": "Calle #3, Lomas de Caparra, Puerto Nuevo, San Juan, PR 00921",
+        "phone_number": "(787) 781-6700",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.42398 -66.0886)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 29,
+    "fields": {
+        "name": "THE RENAL CENTRE OF TOA BAJA",
+        "municipality": "Toa Baja",
+        "address": "PR-165, Km 5.5, Toa Baja, PR 00949",
+        "phone_number": "(787) 292-7979",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.43577 -66.19507)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 30,
+    "fields": {
+        "name": "FRESENIUS MEDICAL CARE VEGA ALTA",
+        "municipality": "Vega Alta",
+        "address": "Carr. 2, Km 29.8, Vega Alta, PR 00692",
+        "phone_number": "(787) 915-0500",
+        "category": "dialisis",
+        "location": "SRID=4326;POINT (18.43577 -66.19507)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 31,
+    "fields": {
+        "name": "DOCTORS CENTER HOSPITAL",
+        "municipality": "Bayamón",
+        "address": "Calle J-9, Extensión Hermanos Dávila, Bayamón PR 00960",
+        "phone_number": "(787) 622-5420",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.397996 -66.16635)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 32,
+    "fields": {
+        "name": "HOSPITAL HIMA SAN PABLO BAYAMÓN",
+        "municipality": "Bayamón",
+        "address": "Calle Santa Cruz #70, Urb. Santa Cruz, Bayamón, PR 00960",
+        "phone_number": "(787) 740-4747",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.397425 -66.14752)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 33,
+    "fields": {
+        "name": "HOSPITAL HERMANOS MELÉNDEZ",
+        "municipality": "Bayamón",
+        "address": "PR-2, Km 11.7, Bayamón, PR 00959",
+        "phone_number": "(787) 620-8181",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.396872 -66.16305)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 34,
+    "fields": {
+        "name": "HOSPITAL PSIQUIÁTRICO DE NIÑOS Y ADOLESCENTES",
+        "municipality": "Bayamón",
+        "address": "Ave. Laurel #100, Urb. Santa Juanita, Bayamón, PR 00956",
+        "phone_number": "(787) 786-7373",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.36757 -66.15412)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 35,
+    "fields": {
+        "name": "HOSPITAL UNIVERSITARIO DR. RAMÓN RUIZ ARNAU",
+        "municipality": "Bayamón",
+        "address": "Ave. Laurel #100, Urb. Santa Juanita, Bayamón, PR 00956",
+        "phone_number": "(787) 780-2819 (787) 787-5151",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.36757 -66.15412)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 36,
+    "fields": {
+        "name": "PUERTO RICO CHILDRENS HOSPITAL INC.",
+        "municipality": "Bayamón",
+        "address": "Carr. 2, Km 11.7, Interior Bo. Pájaros, Bayamón, PR 00960",
+        "phone_number": "(787) 474-8282",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.396831 -66.16364)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 37,
+    "fields": {
+        "name": "CENTRO MÉDICO CORRECCIONAL DE BAYAMON",
+        "municipality": "Bayamón",
+        "address": "Carr. 5, Ave. Central Juanita Final, Bayamón, PR 00960",
+        "phone_number": "(939) 225-2400",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.417786 -66.14807)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 38,
+    "fields": {
+        "name": "DOCTORS CENTER HOSPITAL SAN FERNANDO DE CAROLINA",
+        "municipality": "Carolina",
+        "address": "Edificio Jesús T. Piñeiro, Calle Fernández Juncos, Esq. Molinillo, Carolina, PR 00984",
+        "phone_number": "(787) 621-3322",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.380443 -65.95579)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 39,
+    "fields": {
+        "name": "HOSPITAL DE LA UNIVERSIDAD DE PUERTO RICO (UPR) DR. FEDERICO TRILLA",
+        "municipality": "Carolina",
+        "address": "Ave. 65 Infantería, Carr. 3, Km.8.3, Carolina, PR 00984",
+        "phone_number": "(787) 757-1800",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.388472 -65.9719)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 40,
+    "fields": {
+        "name": "PROFESSIONAL HOSPITAL",
+        "municipality": "Guaynabo",
+        "address": "Carr. 199, Km 1.0, Ave. Las Cumbres, Guaynabo, PR 00969",
+        "phone_number": "(787) 708-6560",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.362338 -66.09756)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 41,
+    "fields": {
+        "name": "ASEM ADMINISTRACIÓN DE SERVICIOS MÉDICOS DE PUERTO RICO",
+        "municipality": "San Juan",
+        "address": "Carr. 21, Bo. Monacillos, Centro Médico, Río Piedras, PR00922",
+        "phone_number": "(787) 777-3535",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.395507 -66.07284)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 42,
+    "fields": {
+        "name": "ASHFORD PRESBYTERIAN COMMUNITY HOSPITAL",
+        "municipality": "San Juan",
+        "address": "Ave. Ashford #1451, Condado, PR 00907",
+        "phone_number": "(787) 721-2160",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.455993 -66.06547)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 43,
+    "fields": {
+        "name": "CENTRO CARDIOVASCULAR DE PR Y DEL CARIBE DR. RAMÓN M. SUÁREZ CALDERON",
+        "municipality": "San Juan",
+        "address": "Carr. 21, Bo. Monacillos, Ave. Américo Miranda, Centro Médico, Río Piedras, PR 00922",
+        "phone_number": "(787) 754-8500",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.398646 -66.07263)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 44,
+    "fields": {
+        "name": "DOCTORS CENTER HOSPITAL SAN JUAN",
+        "municipality": "San Juan",
+        "address": "Calle San Rafael #1395, San Juan, PR 00909",
+        "phone_number": "(787) 999-7620",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.44602 -66.07372)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 45,
+    "fields": {
+        "name": "HEALTH SOUTH REHABILITATION HOSPITAL OF SAN JUAN",
+        "municipality": "San Juan",
+        "address": "3er Piso Hospital Universitario, Bo. Monacillos, Centro Médico, Río Piedras, PR 00936",
+        "phone_number": "(787) 274-5100",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.396858 -66.07358)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 46,
+    "fields": {
+        "name": "HIMA SAN PABLO CUPEY",
+        "municipality": "San Juan",
+        "address": "Carr. 844, Km. 0.5, Cupey Bajo, Río Piedras, PR 00926",
+        "phone_number": "(787) 761-8383",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.372592 -66.04623)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 47,
+    "fields": {
+        "name": "HOSPITAL AUXILIO MUTUO",
+        "municipality": "San Juan",
+        "address": "Ave. Ponce De León #1461, Hato Rey, San Juan, PR 00928",
+        "phone_number": "(787) 758-2000",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.409384 -66.05607)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 48,
+    "fields": {
+        "name": "HOSPITAL DE VETERANOS",
+        "municipality": "San Juan",
+        "address": "Bo. Monacillos, Calle Casia #10, San Juan, PR 00921",
+        "phone_number": "(787) 641-7582",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.391202 -66.07918)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 49,
+    "fields": {
+        "name": "HOSPITAL DEL MAESTRO",
+        "municipality": "San Juan",
+        "address": "Ave. Domenech #1355, Hato Rey, San Juan, PR 00927",
+        "phone_number": "(787) 767-4660",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.40913 -66.07008)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 50,
+    "fields": {
+        "name": "HOSPITAL INTERNACIONAL",
+        "municipality": "San Juan",
+        "address": "Calle San Jorge #33, Santurce, PR 00909",
+        "phone_number": "(787) 723-2600",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.441113 -66.07166)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 51,
+    "fields": {
+        "name": "HOSPITAL METROPOLITANO DR. SUSONI, PAVÍA (HATO REY)",
+        "municipality": "San Juan",
+        "address": "Ave. Ponce De León #1461, Suite 100, Hato Rey, San Juan, PR 00928",
+        "phone_number": "(787) 650-7777",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.40798 -66.0699)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 52,
+    "fields": {
+        "name": "HOSPITAL PAVÍA (SANTURCE)",
+        "municipality": "San Juan",
+        "address": "Ave. Ponce De León #1461, Santurce, PR 00909",
+        "phone_number": "(787) 641-8888",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.44498 -66.0722)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 53,
+    "fields": {
+        "name": "HOSPITAL SAN FRANCISCO",
+        "municipality": "San Juan",
+        "address": "Carr. 838, Km 0.2, Bo. Monacillos, Río Piedras, PR 00926",
+        "phone_number": "(787) 767-5100",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.375252 -66.08272)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 54,
+    "fields": {
+        "name": "HOSPITAL SAN JUAN CAPESTRANO",
+        "municipality": "San Juan",
+        "address": "Carr. 877, Km 1.6, Camino Las Lomas, Rio Piedras, PR 00926",
+        "phone_number": "(787) 625-2900",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.384771 -66.02271)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 55,
+    "fields": {
+        "name": "HOSPITAL SAN PABLO DEL EXPRESO",
+        "municipality": "San Juan",
+        "address": "Ave. Jesús T. Piñero, Esq. Ave. Américo Miranda, Hato Rey, PR 00927",
+        "phone_number": "(787) 749-4900",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.40698 -66.05942)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 56,
+    "fields": {
+        "name": "HOSPITAL UNIVERSITARIO DE ADULTOS",
+        "municipality": "San Juan",
+        "address": "Carr. 21, Bo. Monacillos, Centro Médico, Río Piedras, PR 00922",
+        "phone_number": "(787) 754-0101",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.396705 -66.07389)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 57,
+    "fields": {
+        "name": "SAN JORGE CHILDREN'S HOSPITAL",
+        "municipality": "San Juan",
+        "address": "Calle San Jorge #258, Santurce, PR 00912",
+        "phone_number": "(787) 727-1000",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.447135 -66.06294)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 58,
+    "fields": {
+        "name": "HOSPITAL METROPOLITANO DE LA MONTAÑA TRUJILLO ALTO",
+        "municipality": "Trujillo Alto",
+        "address": "Ave. Jesús T. Piñeiro #100, Trujillo Alto, PR 00976",
+        "phone_number": "(787) 641-8000",
+        "category": "hospital",
+        "location": "SRID=4326;POINT (18.358245 -65.99616)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 59,
+    "fields": {
+        "name": "BAYAMON HEALTH CENTER DR. JOSÉ RAMON SELVA",
+        "municipality": "Bayamón",
+        "address": "Calle Manuel F. Rossy, Esq. Isabel II, Bayamón, PR 00960",
+        "phone_number": "(787) 995-1900",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.39142 -66.15461)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 60,
+    "fields": {
+        "name": "CDT GRUPO MÉDICO SAN PABLO INC",
+        "municipality": "Bayamón",
+        "address": "Calle Santa Cruz B-7, Bayamón, PR 00961",
+        "phone_number": "(787) 787-6804 (787) 780-6267",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.396742 -66.14736)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 61,
+    "fields": {
+        "name": "METRO PAVÍA CLINIC, BAYAMON",
+        "municipality": "Bayamón",
+        "address": "Calle García # 8 y 9, Urb. Santa Cruz, Bayamón, PR 00954",
+        "phone_number": "(787) 780-6536",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.396876 -66.14899)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 62,
+    "fields": {
+        "name": "CDT BELLA VISTA HEALTH CENTER, BAYAMON",
+        "municipality": "Bayamón",
+        "address": "Carr. 167, Marginal Bella Vista, AD #10 Urb. Bella Vista, Bayamón, PR 00955",
+        "phone_number": "(787) 637-2295",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.353776 -66.18957)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 63,
+    "fields": {
+        "name": "CENTRO DE SERVICIOS MÉDICOS INTEGRADOS CDT",
+        "municipality": "Bayamón",
+        "address": "Calle Santa Cruz #59, 4to piso, Bayamón, PR 00960",
+        "phone_number": "(787) 778-2100",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.39781 -66.15012)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 64,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO DE CANÓVANAS",
+        "municipality": "Canóvanas",
+        "address": "Calle Maria Casado, Canóvanas, PR 00729",
+        "phone_number": "(787) 957-1404",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.37785 -65.89825)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 65,
+    "fields": {
+        "name": "METRO PAVÍA CLINIC-CAROLINA",
+        "municipality": "Carolina",
+        "address": "Carr. PR-3, Km. 13.4 int., Carr.857, Bo. Canovanillas, Carolina, PR 00987",
+        "phone_number": "(787) 710-9860 Ext. 248",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.3768 -65.9323)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 66,
+    "fields": {
+        "name": "POLICLÍNICA DR. SALVADOR RIBOT RUIZ",
+        "municipality": "Carolina",
+        "address": "Carr. 857, Km. 0.4, Bo. Canovanilla, Carolina PR 00979",
+        "phone_number": "(787) 752-9375",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.37399 -65.93275)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 67,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO DOCTORES VILLALOBOS CAROLINA",
+        "municipality": "Carolina",
+        "address": "Carolina Shopping Court, Suite 201, Carr. 3, Km 10.3, Carolina, PR 00985",
+        "phone_number": "(787) 767-8758",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.4204 -66.0576)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 68,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO EULALIA KUILAN",
+        "municipality": "Cataño",
+        "address": "Carr. 5, Km 2.8, Edificio Dr. Job Pandujas, Cataño, PR 00963",
+        "phone_number": "(787) 993-6976",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.428 -66.138)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 69,
+    "fields": {
+        "name": "SALA DE EMERGENCIA CSF",
+        "municipality": "Cataño",
+        "address": "Ave. Las Nereidas # 126, Cataño, PR 00962",
+        "phone_number": "(787) 788-0448",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.4424 -66.12718)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 70,
+    "fields": {
+        "name": "CENTRO DE SALUD FAMILIAR MENONITA DE COMERÍO",
+        "municipality": "Comerío",
+        "address": "Carr. 778, Km 0.9, Sector Pasarel Bo. Vega Redonda, Comerio, PR 00782",
+        "phone_number": "(787) 520-7151",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.22307 -66.22329)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 71,
+    "fields": {
+        "name": "CDT PLAZA DEL CARMEN MEDICAL SERVICES",
+        "municipality": "Corozal",
+        "address": "Carr. 891, Km 13, Plaza del Carmen #205, Corozal, PR 00783",
+        "phone_number": "(787) 859-1901",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.341697 -66.31058)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 72,
+    "fields": {
+        "name": "DORADO COMMUNITY HEALTH",
+        "municipality": "Dorado",
+        "address": "Calle 698, Bo. Mameyal #400, Dorado, PR 00646",
+        "phone_number": "(787) 270-3330",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.46303 -66.26961)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 73,
+    "fields": {
+        "name": "CDT DORADO MEDICAL COMPLEX",
+        "municipality": "Dorado",
+        "address": "Calle Mendez Vigo #349, Dorado, PR 00646",
+        "phone_number": "(787) 278-1062",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.46074 -66.26633)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 74,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO EN HATO NUEVO GUAYNΝΑΒΟ",
+        "municipality": "Guaynabo",
+        "address": "Carr. 834, Km. 1.3, Sector Laberinto, Bo. Hato Nuevo, Guaynabo, PR 00969",
+        "phone_number": "(787) 287-5680",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.3137 -66.1025)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 75,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO GUAYNABO MEDICAL MALL",
+        "municipality": "Guaynabo",
+        "address": "Ave. Las Cumbres #140, Suite 210, Guaynabo, PR 00969",
+        "phone_number": "(787) 789-2101",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.36134 -66.11393)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 76,
+    "fields": {
+        "name": "SAN JUAN HEALTH CENTRE CLINIC",
+        "municipality": "San Juan",
+        "address": "Ave. De Diego #150, Esq. Baldorioty, San Juan, PR 00907",
+        "phone_number": "(787) 977-7575",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.450368 -66.065914)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 77,
+    "fields": {
+        "name": "SERVICIOS MÉDICOS UPR RECINTO DE RÍO PIEDRAS",
+        "municipality": "San Juan",
+        "address": "RCM-UPR Centro Médico De Río Piedras, San Juan, PR 00931",
+        "phone_number": "(787) 764-0000",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.405296 -66.047779)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 78,
+    "fields": {
+        "name": "CENTRO DE DIAGNÓSTICO Y TRATAMIENTO ASOCIACIÓN DE MAESTROS DE PUERTO RICO",
+        "municipality": "San Juan",
+        "address": "Hospital Del Maestro, 1Er Nivel, Domenech, San Juan, PR 00927",
+        "phone_number": "(787) 763-5560",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.41196 -66.06811)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 79,
+    "fields": {
+        "name": "CDT CARIBBEAN MEDICAL TESTING CENTER",
+        "municipality": "San Juan",
+        "address": "Calle Clemson #300, San Juan, PR 00927",
+        "phone_number": "(787) 754-6868",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.40678 -66.06533)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 80,
+    "fields": {
+        "name": "CDT PROGRAMA SIDA DE SAN JUAN",
+        "municipality": "San Juan",
+        "address": "Ave. Manuel Fernandez Juncos 1300-1308, San Juan, PR 00909",
+        "phone_number": "(787) 480-3067",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.44773 -66.0742)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 81,
+    "fields": {
+        "name": "CENTRO DE PLANIFICACIÓN FAMILIAR CELESTE ZALDUONDO",
+        "municipality": "San Juan",
+        "address": "Urb. El Vedado, Calle Padre Las Casa #117, San Juan, PR 00918",
+        "phone_number": "(787) 765-7373",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.41977 -66.05831)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 82,
+    "fields": {
+        "name": "CENTRO LATINOAMERICANO DE ENFERMEDADES DE TRANSMISIÓN SEXUAL (CLETS)",
+        "municipality": "San Juan",
+        "address": "Calle Teniente César L. González, San Juan, PR 00927",
+        "phone_number": "(787) 754-8118",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.39347 -66.07379)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 83,
+    "fields": {
+        "name": "CLÍNICAS EXTERNAS ADMINISTRACIÓN DE SERVICIOS MÉDICOS",
+        "municipality": "San Juan",
+        "address": "Edif. Central, Centro Médico, Ave. Américo Miranda S/N, San Juan, PR 00935",
+        "phone_number": "(787) 754-8072",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.39538 -66.07422)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 84,
+    "fields": {
+        "name": "CDT TOA ALTA CURA",
+        "municipality": "Toa Alta",
+        "address": "Calle Barceló #16, Toa Alta, PR 00953",
+        "phone_number": "787-230-7190",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.38943 -66.24811)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 85,
+    "fields": {
+        "name": "CDT DE TOA ALTA BO PINAS",
+        "municipality": "Toa Alta",
+        "address": "Carr. 861, Int. 829, Km 6.1, Bo. Pina, Toa Alta, PR 00953",
+        "phone_number": "(787) 279-1278",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.36785 -66.2168)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 86,
+    "fields": {
+        "name": "TOA BAJA HEALTH CENTER",
+        "municipality": "Toa Baja",
+        "address": "P.O. Box 2359, Toa Baja, PR 00951",
+        "phone_number": "(787) 875-3136",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.43874 -66.19517)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 87,
+    "fields": {
+        "name": "METRO PAVÍA CLINIC, TOA BAJA",
+        "municipality": "Toa Baja",
+        "address": "Ave. Saban Seca, Int. 867 Km 2.2, Toa Baja, PR 00951",
+        "phone_number": "(787) 784-1782",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.438953 -66.1953)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 88,
+    "fields": {
+        "name": "VEGA ALTA COMMUNITY HEALTH",
+        "municipality": "Vega Alta",
+        "address": "Carr. 2, Km 31.9, Vega Alta, PR 00692",
+        "phone_number": "(787) 875-3136",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.42072 -66.33614)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 89,
+    "fields": {
+        "name": "CENTRO DE SALUD FAMILIAR MENONITA DE COMERÍO",
+        "municipality": "Comerío",
+        "address": "Carr. 778, Km 0.9, Sector Pasarel Bo. Vega Redonda, Comerio, PR 00782",
+        "phone_number": "(787) 520-7151",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.22307 -66.22329)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 90,
+    "fields": {
+        "name": "CDT PLAZA DEL CARMEN MEDICAL SERVICES",
+        "municipality": "Corozal",
+        "address": "Carr. 891, Km 13, Plaza del Carmen #205, Corozal, PR 00783",
+        "phone_number": "(787) 859-1901",
+        "category": "cdt",
+        "location": "SRID=4326;POINT (18.341697 -66.31058)"
+    }
+},
+{
+    "model": "app.poi",
+    "pk": 91,
+    "fields": {
+        "name": "El Puente",
+        "municipality": "San Juan",
+        "address": "54 C. Robles, San Juan, 00931",
+        "phone_number": "(787) 545-5118",
+        "category": "refugio-climatico",
+        "location": "SRID=4326;POINT (-0.0707244873046875 -0.0024032592766401)"
+    }
+}
+]

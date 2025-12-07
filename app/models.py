@@ -1,7 +1,5 @@
 from django.contrib.gis.db import models
 
-# Create your models here.
-
 class Route(models.Model):
     time = models.FloatField()
     distance = models.FloatField()
@@ -17,3 +15,11 @@ class NDVILayer(models.Model):
     date = models.DateField()
     satellite = models.CharField(max_length=32)
     image = models.RasterField()
+
+class POI(models.Model):
+    name = models.CharField(max_length=128)
+    municipality = models.CharField(max_length=24)
+    address = models.CharField(max_length=128)
+    phone_number = models.CharField(max_length=128)
+    category=models.CharField(max_length=24)
+    location = models.PointField()

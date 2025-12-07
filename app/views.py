@@ -15,6 +15,11 @@ from rest_framework import status
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 
+from .models import POI
+from .serializers import POISerializer
+from rest_framework.viewsets import ReadOnlyModelViewSet
+
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -90,3 +95,9 @@ class RouteCreateView(APIView):
 
         logger.info("Returning route to client")
         return Response({'route': route_data}, status=200)
+
+
+class POIView(ReadOnlyModelViewSet):
+    permission_classes = (IsAuthenticated,)
+    queryset = POI.objects.all()
+    serializer_class = POISerializer
