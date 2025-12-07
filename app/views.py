@@ -20,6 +20,8 @@ from .serializers import POISerializer
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework_gis.filters import InBBoxFilter
+
 
 
 import logging
@@ -103,7 +105,11 @@ class POIView(ReadOnlyModelViewSet):
     permission_classes = (IsAuthenticated,)
     queryset = POI.objects.all()
     serializer_class = POISerializer
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [
+        DjangoFilterBackend,         
+        InBBoxFilter]
+    bbox_filter_field = "location"
+
     filterset_fields = (
         "name",
         'municipality', 
