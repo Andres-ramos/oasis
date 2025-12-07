@@ -6,7 +6,9 @@ from rest_framework.routers import DefaultRouter
 
 
 router = DefaultRouter()
-# router.register("routing", RouteCreateView)
 router.register("poi", POIView)
 
 urlpatterns = router.urls
+urlpatterns += [
+    path('routing', RouteCreateView.as_view()),
+]
