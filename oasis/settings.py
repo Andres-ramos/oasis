@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.gis",
     "rest_framework_gis",
     "django_extensions",
+    "django_filters",
     "app"
 ]
 
@@ -165,4 +166,8 @@ LOGGING = {
             "level": "INFO",
         },
     },
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }

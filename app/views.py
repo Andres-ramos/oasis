@@ -19,6 +19,8 @@ from .models import POI
 from .serializers import POISerializer
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
+from django_filters.rest_framework import DjangoFilterBackend
+
 
 import logging
 
@@ -101,3 +103,11 @@ class POIView(ReadOnlyModelViewSet):
     permission_classes = (IsAuthenticated,)
     queryset = POI.objects.all()
     serializer_class = POISerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = (
+        "name",
+        'municipality', 
+        'address',
+        'phone_number',
+        "category"
+        )
