@@ -99,5 +99,6 @@ def get_route(lng_a, lat_a, lng_b, lat_b):
     # for route in payload["route"]:
     #     # TODO: Measure overlap with shadow layer and ndvi layer
     #     pass 
-
-    return payload["paths"][max_ndvi_route_index]
+    path_object = payload["paths"][max_ndvi_route_index]
+    path["ndvi"] = max_ndvi
+    return path

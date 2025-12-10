@@ -1,5 +1,19 @@
 from django.contrib.gis.gdal import GDALRaster
 from app.models import NDVILayer
+from django.contrib.gis.geos import GEOSGeometry
+import json
+import numpy as np
+import rioxarray as rxr
+import xarray as xr
+
+from io import BytesIO
+
+from affine import Affine
+from shapely.geometry import shape
+import shapely
+import geopandas as gpd
+import io
+from geojson import Feature, LineString, FeatureCollection
 
 
 route_example = {
@@ -252,10 +266,23 @@ route_example = {
     }
 }
 
+def compute_route_ndvi(route_geojson):
+    BUFFER_SIZE=15
+    
+    gdf = gpd.GeoDataFrame.from_features(route_geojson)
+    gdf = gdf.set_crs(4326)
+    transformed_gdf = gdf.to_crs(6566)
+    transformed_gdf["geometry"] = transformed_gdf.buffer(15)
+    buff_gdf = transformed_gdf.to_crs(4326)
+    # TODO: Load raster from db
+    instance = "./RP_NDVI.tif"
+    ndvi_raster = rxr.open_rasterio(instance)
+    clipped_raster = ndvi_raster.rio.clip(buff_gdf.geometry.values, buff_gdf.crs)
+    return clipped_raster.sum().values
+
 def run() -> None:
-    # TODO: Get NDVI from database
-    ndvi = NDVILayer.objects.get()
-    print(ndvi)
-    # TODO: Convert route into usable geometry (geojson?, shapely linestring?)
-    # TODO: Make buffer for route
-    # TODO: Compute overlap with raster
+
+    f = Feature(geometry=route_example["points"])
+    ndvi_count = compute_route_ndvi([f])
+    print(ndvi_count)
+

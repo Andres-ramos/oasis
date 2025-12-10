@@ -10,6 +10,7 @@ class Route(models.Model):
     route = models.LineStringField()
     departure = models.PointField()
     destination = models.PointField()
+    ndvi_count = models.FloatField()
 
 class NDVILayer(models.Model):
     date = models.DateField()

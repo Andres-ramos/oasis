@@ -91,7 +91,8 @@ class RouteCreateView(APIView):
                 request_time=request_time,
                 route=route_linestring,
                 departure=origin_geom,
-                destination=destination_geom
+                destination=destination_geom,
+                ndvi_count =route_data["ndvi"]
             )
             route_obj.save()
         except Exception:
