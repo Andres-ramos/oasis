@@ -24,3 +24,9 @@ class POI(models.Model):
     phone_number = models.CharField(max_length=128)
     category=models.CharField(max_length=24)
     location = models.PointField()
+
+
+class Shadow(models.Model):
+    polygon = models.PolygonField()
+    time = models.TimeField()
+    season = models.CharField(max_length=12)
