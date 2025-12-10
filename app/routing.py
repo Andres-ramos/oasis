@@ -8,7 +8,8 @@ import logging
 import geopandas as gpd
 import shapely
 import rioxarray as rxr
-from geojson import Feature 
+from geojson import Feature
+import numpy as np
 
 
 logger = logging.getLogger(__name__)
@@ -65,16 +66,20 @@ def compute_shadow_layer(bounding_box):
 
 def compute_route_ndvi(route_geojson):
     BUFFER_SIZE=15
+    
     gdf = gpd.GeoDataFrame.from_features(route_geojson)
     gdf = gdf.set_crs(4326)
     transformed_gdf = gdf.to_crs(6566)
-    transformed_gdf["geometry"] = transformed_gdf.buffer(15)
+    transformed_gdf["geometry"] = transformed_gdf.buffer(BUFFER_SIZE)
     buff_gdf = transformed_gdf.to_crs(4326)
-    # TODO: Load raster from db in the future :)
+    # TODO: Load raster from db
     instance = "./RP_NDVI.tif"
     ndvi_raster = rxr.open_rasterio(instance)
     clipped_raster = ndvi_raster.rio.clip(buff_gdf.geometry.values, buff_gdf.crs)
-    return clipped_raster.sum().values
+    bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
+    bin_raster = np.ceil(bin_raster).mean().values
+
+    return bin_raster
 
 def get_route(lng_a, lat_a, lng_b, lat_b):
     payload = get_routes_from_graphopper(lng_a, lat_a, lng_b, lat_b)

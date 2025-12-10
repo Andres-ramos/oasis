@@ -278,7 +278,10 @@ def compute_route_ndvi(route_geojson):
     instance = "./RP_NDVI.tif"
     ndvi_raster = rxr.open_rasterio(instance)
     clipped_raster = ndvi_raster.rio.clip(buff_gdf.geometry.values, buff_gdf.crs)
-    return clipped_raster.sum().values
+    bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
+    bin_raster = np.ceil(bin_raster).mean().values
+
+    return bin_raster
 
 def run() -> None:
 
