@@ -300,13 +300,11 @@ def compute_route_ndvi(route_geojson):
     transformed_gdf = gdf_fragmented.to_crs(6566)
     transformed_gdf["geometry"] = transformed_gdf.buffer(15)
     buff_gdf = transformed_gdf.to_crs(4326)
-    print(buff_gdf)
 
     instance = "./RP_NDVI.tif"
     ndvi_raster = rxr.open_rasterio(instance)
     ndvis = []
     for geom in buff_gdf["geometry"]:
-        print(geom)
         clipped_raster = ndvi_raster.rio.clip([geom], buff_gdf.crs)
         bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
         bin_raster = np.ceil(bin_raster).mean().values

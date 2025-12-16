@@ -270,21 +270,61 @@ route_example = {
     }
 }
 
+def linestring_to_segments(geojson_linestring):
+    """
+    Convert a GeoJSON LineString into individual line segments.
+    Each segment connects two consecutive points.
+    
+    Args:
+        geojson_linestring: GeoJSON LineString or MultiLineString feature
+        
+    Returns:
+        List of GeoJSON LineString features, one per segment
+    """
+    coordinates = geojson_linestring['coordinates']
+    geometry_type = geojson_linestring['type']
+    
+    segments = []
+    
+    # if geometry_type == 'LineString':
+        # Single LineString - split into segments
+    for i in range(len(coordinates) - 1):
+        segment = {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [coordinates[i], coordinates[i + 1]]
+            },
+            "properties": {
+                "segment_index": i,
+                "original_type": "LineString"
+            }
+        }
+        segments.append(segment)
+    return segments
+
 def compute_route_shadow(route_geojson):
 
     BUFFER_SIZE=10
-    db_geom = GEOSGeometry(json.dumps(route_geojson))
-    db_geom.transform(6566)
-    db_geom = db_geom.buffer(BUFFER_SIZE)
-    s = Shadow.objects.filter(polygon__intersects=db_geom)
+    segments = linestring_to_segments(route_geojson)
+    # print(segments)
+    shade_coverages = []
+    for segment in segments:
+        # print()
+        db_geom = GEOSGeometry(json.dumps(segment["geometry"]))
+        db_geom.transform(6566)
+        db_geom = db_geom.buffer(BUFFER_SIZE)
+        s = Shadow.objects.filter(polygon__intersects=db_geom)
     
-    a = 0
-    for shadow_poly in s:
-        shadow_poly.polygon.transform(6566)
-        intersection = shadow_poly.polygon.intersection(db_geom)
-        a += intersection.area
+        a = 0
+        for shadow_poly in s:
+            shadow_poly.polygon.transform(6566)
+            intersection = shadow_poly.polygon.intersection(db_geom)
+            a += intersection.area
 
-    shade_percentage = a/db_geom.area
+        shade_percentage = min(a/db_geom.area, 1)
+        shade_coverages.append(shade_percentage)
+    print(shade_coverages)
     
 def run() -> None:
 
