@@ -16,7 +16,7 @@ from shapely import Polygon
 
 
 
-GEOJSON_IN = Path("./sjPR_buildings.zip")
+GEOJSON_IN = Path("./RP_buildings_geojson.zip")
 OUT = Path("shadows_san_juanPRCurrent.geojson")
 HEIGHT_FIELD = "height"
 DEFAULT_HEIGHT = 6.0
@@ -82,17 +82,19 @@ def project_shadow(poly, height, elev_deg, az_deg):
     # print("poly orig", poly)
     return translate(poly, xoff=dx, yoff=dy)
 
-def filter_gdf(gdf):
-    aoi_coords = RP_AOI["features"][0]["geometry"]["coordinates"][0]
-    polygon = Polygon(aoi_coords)
-    aoi_gdf = gpd.GeoDataFrame(index=[0], crs='epsg:4326', geometry=[polygon])
-    return gpd.sjoin(gdf, aoi_gdf)
+# def filter_gdf(gdf):
+#     aoi_coords = RP_AOI["features"][0]["geometry"]["coordinates"][0]
+#     polygon = Polygon(aoi_coords)
+#     aoi_gdf = gpd.GeoDataFrame(index=[0], crs='epsg:4326', geometry=[polygon])
+#     return gpd.sjoin(gdf, aoi_gdf)
 
 
 def insert_shadow_batch(season, time):
     print(f"Inserting batch {season}-{time}")
-    gdf = filter_gdf(sj_gdf)
-    # metr = gdf.to_crs(epsg=6566)
+    # gdf = filter_gdf(sj_gdf)
+    gdf = sj_gdf
+    # gdf.to_file("./RP_buildings.geojson", driver="GeoJSON")
+    metr = gdf.to_crs(epsg=6566)
     if gdf.crs is None:
         gdf.set_crs(epsg=4326, inplace=True)
     # metr = gdf.to_crs(epsg=3857)
