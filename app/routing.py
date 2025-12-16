@@ -8,7 +8,7 @@ import logging
 import geopandas as gpd
 import shapely
 import rioxarray as rxr
-from geojson import Feature
+from geojson import Feature, LineString
 import numpy as np
 from app.models import Shadow
 from django.contrib.gis.geos import GEOSGeometry
@@ -77,8 +77,55 @@ def compute_shadow_layer(route_geojson):
         a += intersection.area
 
     return a/db_geom.area
+
+def fragment_linestring(linestring):
+    """Break a LineString into individual line segments"""
+    segments = []
+    coords = list(linestring.coords)
     
-def compute_route_ndvi(route_geojson):
+    for i in range(len(coords) - 1):
+        segment = LineString([coords[i], coords[i + 1]])
+        segments.append(segment)
+    
+    return segments
+
+
+def compute_route_fragment_ndvi(route_geojson):
+    BUFFER_SIZE=15
+
+    gdf = gpd.GeoDataFrame.from_features(route_geojson)
+    gdf = gdf.set_crs(4326)
+
+
+    # Fragment all LineStrings
+    all_segments = []
+    for idx, row in gdf.iterrows():
+        if row.geometry.geom_type == 'LineString':
+            segments = fragment_linestring(row.geometry)
+            for seg_id, seg in enumerate(segments):
+                seg_props = row.to_dict()
+                seg_props['geometry'] = seg
+                seg_props['segment_id'] = seg_id
+                all_segments.append(seg_props)
+
+    gdf_fragmented = gpd.GeoDataFrame(all_segments, crs=gdf.crs)
+    transformed_gdf = gdf_fragmented.to_crs(6566)
+    transformed_gdf["geometry"] = transformed_gdf.buffer(15)
+    buff_gdf = transformed_gdf.to_crs(4326)
+
+    instance = "./RP_NDVI.tif"
+    ndvi_raster = rxr.open_rasterio(instance)
+    ndvis = []
+    for geom in buff_gdf["geometry"]:
+        clipped_raster = ndvi_raster.rio.clip([geom], buff_gdf.crs)
+        bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
+        bin_raster = np.ceil(bin_raster).mean().values
+        ndvis.append(bin_raster)
+
+    gdf_fragmented["ndvi"] = ndvis
+    return list(gdf_fragmented["ndvi"].values)
+
+def compute_total_route_ndvi(route_geojson):
     BUFFER_SIZE=15
     
     gdf = gpd.GeoDataFrame.from_features(route_geojson)
@@ -99,9 +146,10 @@ def get_route(lng_a, lat_a, lng_b, lat_b):
     payload = get_routes_from_graphopper(lng_a, lat_a, lng_b, lat_b)
     ndvi_counts = []
     shade_coverages = []
+
     for path in payload["paths"]:
         route_geojson = Feature(geometry=path["points"])
-        ndvi_count = compute_route_ndvi([route_geojson])
+        ndvi_count = compute_total_route_ndvi([route_geojson])
         shade_coverage = compute_shadow_layer(path["points"])
         ndvi_counts.append(ndvi_count)
         shade_coverages.append(shade_coverage)
@@ -117,4 +165,7 @@ def get_route(lng_a, lat_a, lng_b, lat_b):
     path_object = payload["paths"][max_index]
     path["ndvi"] = ndvi_counts[max_index]
     path["shade"] = shade_coverages[max_index]
+
+    path["ndvi_segment_list"] = compute_route_fragment_ndvi([route_geojson])
+    
     return path

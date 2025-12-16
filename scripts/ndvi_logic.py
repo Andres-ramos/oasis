@@ -266,26 +266,59 @@ route_example = {
     }
 }
 
+def fragment_linestring(linestring):
+    """Break a LineString into individual line segments"""
+    segments = []
+    coords = list(linestring.coords)
+    
+    for i in range(len(coords) - 1):
+        segment = LineString([coords[i], coords[i + 1]])
+        segments.append(segment)
+    
+    return segments
+
+
 def compute_route_ndvi(route_geojson):
     BUFFER_SIZE=15
-    
+
     gdf = gpd.GeoDataFrame.from_features(route_geojson)
     gdf = gdf.set_crs(4326)
-    transformed_gdf = gdf.to_crs(6566)
+
+
+    # Fragment all LineStrings
+    all_segments = []
+    for idx, row in gdf.iterrows():
+        if row.geometry.geom_type == 'LineString':
+            segments = fragment_linestring(row.geometry)
+            for seg_id, seg in enumerate(segments):
+                seg_props = row.to_dict()
+                seg_props['geometry'] = seg
+                seg_props['segment_id'] = seg_id
+                all_segments.append(seg_props)
+
+    gdf_fragmented = gpd.GeoDataFrame(all_segments, crs=gdf.crs)
+    transformed_gdf = gdf_fragmented.to_crs(6566)
     transformed_gdf["geometry"] = transformed_gdf.buffer(15)
     buff_gdf = transformed_gdf.to_crs(4326)
-    # TODO: Load raster from db
+    print(buff_gdf)
+
     instance = "./RP_NDVI.tif"
     ndvi_raster = rxr.open_rasterio(instance)
-    clipped_raster = ndvi_raster.rio.clip(buff_gdf.geometry.values, buff_gdf.crs)
-    bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
-    bin_raster = np.ceil(bin_raster).mean().values
-
-    return bin_raster
+    ndvis = []
+    for geom in buff_gdf["geometry"]:
+        print(geom)
+        clipped_raster = ndvi_raster.rio.clip([geom], buff_gdf.crs)
+        bin_raster = clipped_raster.where(clipped_raster >= 0.1, 0.0)
+        bin_raster = np.ceil(bin_raster).mean().values
+        ndvis.append(bin_raster)
+    gdf_fragmented["ndvi"] = ndvis
+    return gdf_fragmented
 
 def run() -> None:
 
     f = Feature(geometry=route_example["points"])
-    ndvi_count = compute_route_ndvi([f])
-    print(ndvi_count)
+    ndvi_gdf = compute_route_ndvi([f])
+    ndvi_list = list(ndvi_gdf["ndvi"].values)
+    route_example["ndvi_list"] =ndvi_list
+    print(route_example)
 
