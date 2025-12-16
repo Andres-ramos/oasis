@@ -58,6 +58,10 @@ RP_AOI = {
     ]
 }
 
+print("Loading geojson file into memory")
+sj_gdf = gpd.read_file(GEOJSON_IN)
+# sj_gdf = sj_gdf.set_crs(epsg=4326)
+
 def sun_angles(lat, lon, when):
     elev = get_altitude(lat, lon, when)
     az = get_azimuth(lat, lon, when)
@@ -75,6 +79,7 @@ def project_shadow(poly, height, elev_deg, az_deg):
     dx = math.sin(az_rad) * shadow_len
     dy = math.cos(az_rad) * shadow_len
     # translate polygon by (dx east, dy north)
+    # print("poly orig", poly)
     return translate(poly, xoff=dx, yoff=dy)
 
 def filter_gdf(gdf):
@@ -86,13 +91,15 @@ def filter_gdf(gdf):
 
 def insert_shadow_batch(season, time):
     print(f"Inserting batch {season}-{time}")
-    sj_gdf = gpd.read_file(GEOJSON_IN)
-    sj_gdf = sj_gdf.set_crs(epsg=4326)
-
     gdf = filter_gdf(sj_gdf)
-    metr = gdf.to_crs(epsg=6566)
-    gdf = gdf[~gdf["geometry"].isna()]
+    # metr = gdf.to_crs(epsg=6566)
+    if gdf.crs is None:
+        gdf.set_crs(epsg=4326, inplace=True)
+    # metr = gdf.to_crs(epsg=3857)
+    metr = gdf.to_crs(epsg=3857)
 
+    # gdf = gdf[~gdf["geometry"].isna()]
+    # time = datetime.now(timezone.utc)
     shadow_features = []
     c = 0
     for _, row in metr.iterrows():
@@ -104,15 +111,20 @@ def insert_shadow_batch(season, time):
             h = DEFAULT_HEIGHT
 
         centroid = geom.centroid
+        # lon, lat = centroid.x, centroid.y
         lon, lat = Transformer.from_crs(metr.crs, "EPSG:4326", always_xy=True).transform(centroid.x, centroid.y)
+        # print(lon, lat)
         elev, az = sun_angles(lat, lon, time)
+        # print(elev, az)
         if elev <= 0:
             continue
-
+        # print(elev, az)
         shadow_poly = project_shadow(geom, h, elev, az)
+        # print(shadow_poly)
         if shadow_poly is None or shadow_poly.is_empty:
             continue
-        db_geometry = GEOSGeometry(shapely.to_wkt(shadow_poly))
+        # print(shadow_poly)
+        db_geometry = GEOSGeometry(shapely.to_wkt(shadow_poly), srid=3857)
         shadow_db = Shadow.objects.create(
             polygon=db_geometry,
             time=time,
@@ -120,6 +132,7 @@ def insert_shadow_batch(season, time):
         )
         data = shadow_db.save()
         c += 1
+        # break 
     
     print(f"Inserted {len(metr)} polygons \n")
 
@@ -129,39 +142,21 @@ def main():
     SEASON_LIST = ["winter", "summer", "fall", "spring"]
 
     for season in SEASON_LIST:
-        start_time = time(7, 0)
+        start_time = time(10, 0)
         end_time = time(19, 0)
 
+        # TODO: Change to summer solstice date
         start = datetime.combine(datetime.today(), start_time)
         start = start.replace(tzinfo=ZoneInfo('US/Eastern'))
         end = datetime.combine(datetime.today(), end_time)
         end= end.replace(tzinfo=ZoneInfo('US/Eastern'))
         current = start
         while current <= end:
-            current += timedelta(minutes=15)
             insert_shadow_batch(season, current)
+            current += timedelta(minutes=15)
+            break 
         break 
     
-    # if not shadow_features:
-    #     print("No shadows computed (sun below horizon or no heights).")
-    #     return
-
-    # from geopandas import GeoDataFrame
-
-    # records = []
-    # for feat in shadow_features:
-    #     rec = feat.get("properties", {}).copy()
-    #     rec["geometry"] = feat["geometry"]
-    #     records.append(rec)
-
-    # shadows_gdf = GeoDataFrame(records, geometry="geometry", crs=metr.crs)
-
-    # shadows_gdf = shadows_gdf.to_crs(epsg=4326)
-    # print(shadows_gdf)
-    # shadows_gdf.to_file(OUT, driver="GeoJSON")
-    # print("Wrote", OUT, "with", len(shadows_gdf), "shadow features")
-
-
 def run() -> None:
     main()
 
