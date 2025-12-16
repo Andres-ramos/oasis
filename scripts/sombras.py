@@ -16,7 +16,7 @@ from shapely import Polygon
 
 
 
-GEOJSON_IN = Path("./sjPR_buildings.geojson")
+GEOJSON_IN = Path("./sjPR_buildings.zip")
 OUT = Path("shadows_san_juanPRCurrent.geojson")
 HEIGHT_FIELD = "height"
 DEFAULT_HEIGHT = 6.0
